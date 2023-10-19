@@ -5,8 +5,12 @@ const port = 3000;
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
+const produto = [
+{id: 1, nome: "nome do produto", preco: "400", descricao: "descricao do produto", imagem: "produto1.jpg"},
+]
+
 app.get('/produtinho', (req, res) => {
-  res.render('produtinho', { message: 'Deseja esse produtinho?' });
+  res.render('produtinho', { message: 'Deseja esse produtinho?' })
 });
 
 app.get('/produto', (req, res) => {
