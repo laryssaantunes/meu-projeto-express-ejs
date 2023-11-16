@@ -1,5 +1,5 @@
 .body{
-    background: #sdkdk;
+    background: #865596;
 }
 
 
@@ -13,4 +13,15 @@ text-align: center;
  height: 300px;
  width: 250px;
 }
+
+.letrinhas{
+    padding: 5px;
+    font-size: 15px;
+    font-family:'Paprika', sans-serif;
+    color: #865596;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
