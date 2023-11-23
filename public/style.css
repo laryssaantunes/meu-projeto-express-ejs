@@ -3,25 +3,27 @@
 }
 
 
-.card{
-height: 450px;
-width: 360px;
-text-align: center;
-}
-
-.icard-img-topmage{
- height: 300px;
- width: 250px;
-}
-
-.letrinhas{
-    padding: 5px;
-    font-size: 15px;
-    font-family:'Paprika', sans-serif;
-    color: #865596;
-    margin: 0;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+.navbar {
+    background-color: rgb(136, 94, 152);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #8c6aae;
   }
-
+  
+  .logo {
+    max-width: 10px; /* Ajuste o tamanho da logo conforme necessário */
+  }
+  
+  /* Estilos para a introdução */
+  .laryssa {
+    background-color: #3d0739;
+    display: inline-block;
+    width: 800px;
+    height: 1000px;
+    padding: 10px;
+    margin: 40px;
+    overflow: hidden;
+  }
+ 
