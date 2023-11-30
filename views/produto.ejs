@@ -8,14 +8,24 @@
 
 <body>
 
-
-    <div className="laryssa">
-    <a href ="/produto">
-    <img src="https://www.selecoes.com.br/media/_versions/2023/07/maquiagem-influenciadoras-brasileiras_widemd.jpg" alt="" ></img>
-    <h2>Kit de maquiagem </h2>
-    <p>R$230,00 Reais</p>
+  <div class="content">
+    <h1 class = "title"></h1>
+    
+    <ul class="product>"
+      <% for (let produto of produtos) { %>
+        <li> 
+          <a href="/">
+            <h2><%= produto.nome %></h2>
+            <img src="" alt="" />
+            <p><%= produto.preco %></p>
+          </a>
+        </li>
+        <% } %>
+      </ul>
   </div>
-</a>
+  
+  <div class-="bottom"></div>
+ 
 
 </body>
 </html>

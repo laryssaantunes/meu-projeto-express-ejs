@@ -6,16 +6,16 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const produtos = [
-{id: 1, nome: "Kit de maquiagem ", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 2, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "aaaaaaaaaa.jpg"},
-{id: 3, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "tttttttttttttttt.jpg"},
-{id: 4, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 5, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 6, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 7, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 8, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 9, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
-{id: 10, nome: "Kit de maquiagem", preco: "400,00", descricao: "descricao do produto", imagem: "jihukny.jpg"},
+{id: 1, nome: "Kit de maquiagem ",preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 2, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "aaaaaaaaaa.jpg"},
+{id: 3, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "tttttttttttttttt.jpg"},
+{id: 4, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 5, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 6, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 7, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 8, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 9, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 10, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
 ] 
 
 function buscarProdutoPorID(){
@@ -29,7 +29,8 @@ app.get('/', (req, res) => {
 
 
 app.get('/produto', (req, res) => {
-  res.render('produto', { message: 'Bem vindo a pagina produtos!' });
+  const produto = buscarProdutoPorID(req.params.id)
+  res.render('produto', {produtos });
 });
 
 
