@@ -18,7 +18,7 @@ const produtos = [
 {id: 10, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
 ] 
 
-function buscarProdutoPorID(){
+function buscarProdutoPorID(id){
   const produto = produtos.find(produto => produto.id == id)
   return produto || null
 }
@@ -28,9 +28,9 @@ app.get('/', (req, res) => {
 });
 
 
-app.get('/produto', (req, res) => {
+app.get('/produtos/:id', (req, res) => {
   const produto = buscarProdutoPorID(req.params.id)
-  res.render('produto', {produtos });
+  res.render('produto', {produto });
 });
 
 
