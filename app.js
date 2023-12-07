@@ -6,7 +6,7 @@ app.set('view engine', 'ejs');
 app.use(express.static('public'));
 
 const produtos = [
-{id: 1, nome: "Kit de maquiagem ",preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
+{id: 1, nome: "Kit de maquiagem ",preco: "10,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
 {id: 2, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "aaaaaaaaaa.jpg"},
 {id: 3, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "tttttttttttttttt.jpg"},
 {id: 4, nome: "Kit de maquiagem", preco: "400,00", descricao: "Maquiagem", imagem: "jihukny.jpg"},
